@@ -1,4 +1,3 @@
-/* Root Variables */
 :root {
     --primary-bg: #1a0b2e;
     --nav-bg: #1A0B2E;
@@ -10,7 +9,6 @@
     --gradient-yellow: rgba(247, 233, 63, 1);
 }
 
-/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +28,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation */
 .navbar {
     background-color: var(--nav-bg);
     padding: 20px 0;
@@ -104,7 +101,6 @@ body {
     height: 30px;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     padding: 100px 0;
@@ -277,7 +273,6 @@ body {
     height: 20px;
 }
 
-/* About Section */
 .about {
     padding: 100px 0;
     background-color: rgba(26, 11, 46, 0.9);
@@ -328,7 +323,6 @@ body {
     font-weight: 400;
 }
 
-/* Why Choose Section */
 .why-choose {
     padding: 100px 0;
     background-color: #230E3D;
@@ -347,7 +341,6 @@ body {
 
 .feature-card {
     background: rgba(53, 17, 101, 0.4);
-    /* #351165 at 40% opacity */
     padding: 30px;
     border-radius: 30px;
     transition: transform 0.3s ease;
@@ -359,7 +352,6 @@ body {
     overflow: hidden;
 }
 
-/* Add a subtle gradient overlay to match the image depth */
 .feature-card::before {
     content: '';
     position: absolute;
@@ -375,30 +367,23 @@ body {
     transform: translateY(-5px);
 }
 
-/* Card Specific Positioning */
-
-/* 1. Premium Audio Quality (Top Left - Tall) */
 .feature-card:nth-child(1) {
     grid-column: span 5;
     grid-row: span 2;
 }
 
-/* 2. Mobile Friendly (Top Right - Wide) */
 .feature-card:nth-child(2) {
     grid-column: span 7;
 }
 
-/* 3. Global Community (Middle Right - Wide) */
 .feature-card:nth-child(3) {
     grid-column: 6 / span 7;
 }
 
-/* 4. Exclusive Interviews (Bottom Left - Wide) */
 .feature-card:nth-child(4) {
     grid-column: span 7;
 }
 
-/* 5. Rich Resources (Bottom Right - Standard) */
 .feature-card:nth-child(5) {
     grid-column: span 5;
 }
@@ -429,7 +414,6 @@ body {
     margin: 0;
 }
 
-/* Featured Episodes */
 .featured-episodes {
     padding: 100px 0;
     background-color: transparent;
@@ -530,7 +514,6 @@ body {
     height: 16px;
 }
 
-/* Meet The Host */
 .meet-host {
     padding: 100px 0;
 }
@@ -603,7 +586,6 @@ body {
     height: 16px;
 }
 
-/* Footer */
 .footer {
     position: relative;
     padding: 100px 0 50px;
@@ -681,7 +663,6 @@ body {
     margin-top: 20px;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 1024px) {
     .features-grid {
         display: flex;
@@ -730,8 +711,8 @@ body {
     }
 
     .hero-circle-wrapper {
-        width: 260px;
-        height: 260px;
+        width: 200px;
+        height: 200px;
     }
 
     .episode-number {
